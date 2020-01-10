@@ -1,0 +1,10 @@
+--- a/cmake/opentrack-i18n.cmake
++++ b/cmake/opentrack-i18n.cmake
+@@ -51,7 +51,6 @@ endfunction()
+ 
+ function(otr_merge_translations)
+     otr_escape_string(i18n-pfx "${opentrack-i18n-pfx}")
+-    install(CODE "file(REMOVE_RECURSE \"\${CMAKE_INSTALL_PREFIX}/${i18n-pfx}\")")
+ 
+     foreach(i ${opentrack_all-translations})
+         get_property(ts-files GLOBAL PROPERTY "opentrack-ts-files-${i}")

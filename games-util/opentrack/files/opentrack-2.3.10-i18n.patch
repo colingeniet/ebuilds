@@ -1,0 +1,11 @@
+--- a/cmake/opentrack-i18n.cmake
++++ b/cmake/opentrack-i18n.cmake
+@@ -31,8 +31,6 @@
+ endfunction()
+ 
+ function(otr_merge_translations)
+-    install(CODE "file(REMOVE_RECURSE \"\${CMAKE_INSTALL_PREFIX}/i18n\")")
+-
+     get_property(variant GLOBAL PROPERTY opentrack-variant)
+     if(NOT ".${variant}" STREQUAL ".default")
+         set(force-skip-update TRUE)

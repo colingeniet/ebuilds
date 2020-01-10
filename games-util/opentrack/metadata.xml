@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>colin.geniet@gmail.com</email>
+		<name>Colin Geniet</name>
+	</maintainer>
+	<longdescription lang="en">
+opentrack is an head tracking software designed for use in games and flight simulators
+	</longdescription>
+	<use>
+		<flag name="wine">Enable wine protocol</flag>
+		<flag name="xplane">Enable X-Plane protocol</flag>
+	</use>
+</pkgmetadata>
